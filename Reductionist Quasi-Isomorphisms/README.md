@@ -8,11 +8,11 @@ is finding an isomorphism between some set of states that requires a certain amo
 information to specify a specific state, and another such set that requires a smaller amount
 of information to specify a state.  That's essentially what dimensionality reduction is doing
 but with some multi-dimensional set of real numbers.  The reason I call it a quasi-isomorphism is
-because you can't expect to find a perfect isomorphism between two of the aforementioned sets,
+that you can't expect to find a perfect isomorphism between two of the aforementioned sets,
 so what you want instead is the mapping that is as close to an isomorphism as possible.  To get 
 technical, you need to define a loss function between a particular state and a predicted
-state, and then find the mapping betweeen sets that minimizes that loss function.  The loss
-function should obviously behave as you would expect (it's zero if the states are equal, and get's
+state, and then find the mapping between sets that minimizes that loss function.  The loss
+function should obviously behave as you would expect (it's zero if the states are equal, and gets
 larger the "further" the states are apart).
 
 Why do I care about this?  If you can find a good quasi-isomorphism, then you've essentially
