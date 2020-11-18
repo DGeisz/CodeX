@@ -5,7 +5,7 @@ for the experiments I run, the metrics I create, and the tools I build for said 
 aren't me, and you actually care about learning what I'm up to, then you're welcome for keeping 
 such a juicy, disgustingly well-organized log of my experiments.
 
-### Structure
+### Structure (as of 11/18/2020)
 There is a directory in this top directory for each topic I'm researching.  In each topic 
 directory, there will be a readme with a brief overview of the topic, and a table of 
 contents for the experiments, metrics, and tools I create that pertain to that topic.
