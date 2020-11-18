@@ -21,4 +21,4 @@ and find correlations to other related data with greater ease.  This is essentia
 processing required for consciousness.
 
 ## Table of Contents
-1. [11_18_2020_metric_mnist_competitive_classification](https://github.com/DGeisz/CodeX/tree/main/Reductionist%20Quasi-Isomorphisms/11_18_2020_metric_mnist_competitive_classification)
+1. [11_18_2020_metric_mnist_competitive_classification](11_18_2020_metric_mnist_competitive_classification)
