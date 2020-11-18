@@ -1,0 +1,1 @@
+# MNIST Competitive Classification Metric
