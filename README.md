@@ -28,7 +28,7 @@ different write-ups are as follows.
 
 #### Experiment Write-up Fields
 * **Code**: Includes the repo, branch (optional), and commit (optional) for the code used to run
-the experiment.  If the branch and commit, you can assume the branch is the main/master branch, and 
+the experiment.  If the branch and commit are omitted, you can assume the branch is the main/master branch, and 
 the commit is the leading commit of that branch.
 
 * **Intro**: 
