@@ -5,7 +5,7 @@ I'm really being somewhat difficult with this name.  The EMT in this topic basic
 pertain to dimensionality reduction.  However, I don't like the name dimensionality reduction.
 It makes me think of finding some map between real numbers.  What I'm really interested in
 is finding an isomorphism between some set of states that requires a certain amount of 
-information to specify a specific states, and another such set that requires a smaller amount
+information to specify a specific state, and another such set that requires a smaller amount
 of information to specify a state.  That's essentially what dimensionality reduction is doing
 but with some multi-dimensional set of real numbers.  The reason I call it a quasi-isomorphism is
 because you can't expect to find a perfect isomorphism between two of the aforementioned sets,
