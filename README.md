@@ -5,7 +5,7 @@ for the experiments I run, the metrics I create, and the tools I build for said 
 aren't me, and you actually care about learning what I'm up to, then you're welcome for keeping 
 such a juicy, disgustingly well-organized log of my experiments.
 
-### Structure (as of 11/18/2020)
+### Structure (as of 11/20/2020)
 There is a directory in this top directory for each topic I'm researching.  In each topic 
 directory, there will be a readme with a brief overview of the topic, and a table of 
 contents for the experiments, metrics, and tools I create that pertain to that topic.
@@ -96,4 +96,4 @@ structure.  If you're really committed (that's a pre-pun, just you wait) to find
 for old EMTs, then feel free to yote on over to a past git commit (that's the pun 😂) to see the structure I
 was using in past CodeX eras.
 
-* Edit 11/20/2020 - Added **Technicals** section to experiment write-ups.
+* Edit 11/20/2020 - Added **Technicals** section to experiment write-ups. Commit: ec252a41962a00a
