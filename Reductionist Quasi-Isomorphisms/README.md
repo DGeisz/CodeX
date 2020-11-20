@@ -23,3 +23,4 @@ processing required for consciousness.
 ## Table of Contents
 1. [11_18_2020_metric_mnist_competitive_classification](11_18_2020_metric_mnist_competitive_classification)
 2. [11_19_2020_experiment_prototype_ae](11_19_2020_experiment_prototype_ae)
+3. [11_20_2020_experiment_competitive_ae](11_20_2020_experiment_competitive_ae)
