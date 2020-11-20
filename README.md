@@ -42,6 +42,10 @@ the commit is the leading commit of that branch.
     might go wrong, and what is inherently limiting about the setup.  Basically the negative side of the 
     experiment's hypothesis.
     
+* **Technicals**: This is more in depth description of the inner working of the current experiment than simply
+the "what" section above.  This section should include any theory or algorithms that are of utmost 
+importance to the experiment.  
+    
 * **Analysis Dialogue**: This is basically a conversational form of analysis.  This is where I'll
 include data, graphs, and other forms of analysis.  I'll describe what experiment parameters I'm choosing or running
 and why I'm doing so, and then include the results of that trial.  As a note about experiments, I consider 
@@ -91,3 +95,5 @@ be major, but obviously any EMT I create before the edit doesn't necessarily adh
 structure.  If you're really committed (that's a pre-pun, just you wait) to finding out the structure 
 for old EMTs, then feel free to yote on over to a past git commit (that's the pun 😂) to see the structure I
 was using in past CodeX eras.
+
+* Edit 11/20/2020 - Added **Technicals** section to experiment write-ups.
