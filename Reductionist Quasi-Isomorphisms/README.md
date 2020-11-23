@@ -26,3 +26,4 @@ processing required for consciousness.
 3. [11_20_2020_experiment_competitive_ae](11_20_2020_experiment_competitive_ae)
 4. [11_20_2020_metric_mnist_collaborative_classification](11_20_2020_metric_mnist_collaborative_classification)
 5. [11_20_2020_experiment_collaborative_ae](11_20_2020_experiment_collaborative_ae)
+6. [11_23_2020_experiment_multi_layer_collab_ae](11_23_2020_experiment_multi_layer_collab_ae)
