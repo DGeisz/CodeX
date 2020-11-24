@@ -98,5 +98,5 @@ structure.  If you're really committed (that's a pre-pun, just you wait) to find
 for old EMTs, then feel free to yote on over to a past git commit (that's the pun 😂) to see the structure I
 was using in past CodeX eras.
 
-* Edit 11/24/2020 - Added specification for when I run experiment code directly in the notebook. Commit: 
+* Edit 11/24/2020 - Added specification for when I run experiment code directly in the notebook. Commit: 6f189d0d20685 
 * Edit 11/20/2020 - Added **Technicals** section to experiment write-ups. Commit: ec252a41962a00a
