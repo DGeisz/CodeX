@@ -28,3 +28,4 @@ processing required for consciousness.
 5. [11_20_2020_experiment_collaborative_ae](11_20_2020_experiment_collaborative_ae)
 6. [11_23_2020_experiment_multi_layer_collab_ae](11_23_2020_experiment_multi_layer_collab_ae)
 7. [11_24_2020_experiment_faux_snn](11_24_2020_experiment_faux_snn)
+8. [11_24_2020_experiment_competitive_specializing_network](11_24_2020_experiment_competitive_specializing_network)

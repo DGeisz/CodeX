@@ -29,7 +29,9 @@ different write-ups are as follows.
 #### Experiment Write-up Fields
 * **Code**: Includes the repo, branch (optional), and commit (optional) for the code used to run
 the experiment.  If the branch and commit are omitted, you can assume the branch is the main/master branch, and 
-the commit is the leading commit of that branch.
+the commit is the leading commit of that branch.  **Note:** If I simply write all the code in a jupyter
+notebook, then I'll move the **Code** section above the analysis dialog and write the main code body
+there. 
 
 * **Intro**: 
     * Date: The date this experiment was started.
@@ -96,4 +98,5 @@ structure.  If you're really committed (that's a pre-pun, just you wait) to find
 for old EMTs, then feel free to yote on over to a past git commit (that's the pun 😂) to see the structure I
 was using in past CodeX eras.
 
+* Edit 11/24/2020 - Added specification for when I run experiment code directly in the notebook. Commit: 
 * Edit 11/20/2020 - Added **Technicals** section to experiment write-ups. Commit: ec252a41962a00a
