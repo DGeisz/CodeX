@@ -30,3 +30,4 @@ processing required for consciousness.
 7. [11_24_2020_experiment_faux_snn](11_24_2020_experiment_faux_snn)
 8. [11_24_2020_experiment_competitive_specializing_network](11_24_2020_experiment_competitive_specializing_network)
 9. [11_26_2020_experiment_comp_spec_mini_batch](11_26_2020_experiment_comp_spec_mini_batch)
+10. [11_26_2020_experiment_charged_comp_spec](11_26_2020_experiment_charged_comp_spec)
