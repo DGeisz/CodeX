@@ -15,3 +15,4 @@ create something life-altering.
 
 ## Table of Contents:
 1. [11_27_2020_experiment_comp_spec_infilteration](11_27_2020_experiment_comp_spec_infilteration)
+2. [11_27_2020_experiment_comp_spec_mnist_classifier_v1](11_27_2020_experiment_comp_spec_mnist_classifier_v1)
