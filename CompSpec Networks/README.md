@@ -19,3 +19,5 @@ create something life-altering.
 3. [11_29_2020_experiment_comp_spec_cookhouse_1](11_29_2020_experiment_comp_spec_cookhouse_1)
 4. [11_30_2020_experiment_comp_spec_comparison](11_30_2020_experiment_comp_spec_comparison)
 5. [11_30_2020_experiment_team_comp_spec](11_30_2020_experiment_team_comp_spec)
+6. [11_30_2020_experiment_multi_comp_spec](11_30_2020_experiment_multi_comp_spec)
+7. [11_30_2020_experiment_nat_comp_cookhouse](11_30_2020_experiment_nat_comp_cookhouse)
