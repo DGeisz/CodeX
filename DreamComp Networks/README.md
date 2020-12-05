@@ -33,3 +33,4 @@ manner that we see the world around us when our eyes are open.
 ##Table of Contents:
 1. [12_3_2020_experiment_dream_comp_recon_weights](12_3_2020_experiment_dream_comp_recon_weights)
 2. [12_3_2020_experiment_dream_flow](12_3_2020_experiment_dream_flow)
+3. [12_5_2020_experiment_dream_flow_local](12_5_2020_experiment_dream_flow_local)
