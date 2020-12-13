@@ -14,3 +14,4 @@ to get there.
 1. [12_11_2020_experiment_exploring_sparse_coding](12_11_2020_experiment_exploring_sparse_coding)
 2. [12_11_2020_experiment_sparse_collab_ae](12_11_2020_experiment_sparse_collab_ae)
 3. [12_12_2020_experiment_sparse_dream_cifar](12_12_2020_experiment_sparse_dream_cifar)
+4. [12_14_2020_experiment_topographic_sparse_dream](12_14_2020_experiment_topographic_sparse_dream)
