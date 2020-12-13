@@ -13,3 +13,4 @@ to get there.
 ## Table of Contents:
 1. [12_11_2020_experiment_exploring_sparse_coding](12_11_2020_experiment_exploring_sparse_coding)
 2. [12_11_2020_experiment_sparse_collab_ae](12_11_2020_experiment_sparse_collab_ae)
+3. [12_12_2020_experiment_sparse_dream_cifar](12_12_2020_experiment_sparse_dream_cifar)
