@@ -16,3 +16,4 @@ to get there.
 3. [12_12_2020_experiment_sparse_dream_cifar](12_12_2020_experiment_sparse_dream_cifar)
 4. [12_13_2020_experiment_topographic_sparse_dream](12_14_2020_experiment_topographic_sparse_dream)
 5. [12_13_2020_experiment_topo_sparse_dream_mnist](12_13_2020_experiment_topo_sparse_dream_mnist)
+6. [12_14_2020_experiment_sparse_dream_lat_inhibition](12_14_2020_experiment_sparse_dream_lat_inhibition)
