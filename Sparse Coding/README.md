@@ -17,3 +17,5 @@ to get there.
 4. [12_13_2020_experiment_topographic_sparse_dream](12_14_2020_experiment_topographic_sparse_dream)
 5. [12_13_2020_experiment_topo_sparse_dream_mnist](12_13_2020_experiment_topo_sparse_dream_mnist)
 6. [12_14_2020_experiment_sparse_dream_lat_inhibition](12_14_2020_experiment_sparse_dream_lat_inhibition)
+7. [12_14_2020_experiment_topo_sparse_dream_lat_ex_in](12_14_2020_experiment_topo_sparse_dream_lat_ex_in)
+8. [12_15_2020_experiment_topo_sparse_dream_hebbian_ex](12_15_2020_experiment_topo_sparse_dream_hebbian_ex)

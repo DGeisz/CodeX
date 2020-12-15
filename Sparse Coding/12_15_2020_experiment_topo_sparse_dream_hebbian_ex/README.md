@@ -1,0 +1,3 @@
+# Topo SparseDream with Hebbian Lateral Excitation
+
+Dang, I think that's the longest title to date.  This goes along perfectly with the "Next steps" section from the previous experiment.  Basically, using reconstruction synapses for lateral excitation did not go well.  I got all sorts of domination effects and clustering.  So basically, I'm hypothesizing that if I use Foldiak Hebbian synapses, connections will only form between neurons that are actually correlated.  At least, that's the idea.  I'm actually not super confident that this will "sew" anything together topologically, but a girl's gotta hope, ya know?
