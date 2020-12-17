@@ -1,0 +1,3 @@
+# SparseDream Conserved Flow
+
+While I was doing a deep reading of the Sparse Manifold Transform and Olshausen's paper on Sparse Coding, I thought of a new way to ensure there's sparsity in the network without having to constantly adjust an unstable sparsity threshold.  Basically, you essentially add a constraint that attempts to ensure that the charge flowing out of the sparse layer is some fraction of the charge flowing into the sparse layer.  I'm conjecturing that this constraint will essentially force the output to be sparse.
