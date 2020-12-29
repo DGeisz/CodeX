@@ -20,3 +20,6 @@ to get there.
 7. [12_14_2020_experiment_topo_sparse_dream_lat_ex_in](12_14_2020_experiment_topo_sparse_dream_lat_ex_in)
 8. [12_15_2020_experiment_topo_sparse_dream_hebbian_ex](12_15_2020_experiment_topo_sparse_dream_hebbian_ex)
 9. [12_17_2020_experiment_sparse_dream_conserved_flow](12_17_2020_experiment_sparse_dream_conserved_flow)
+10. [12_20_2020_experiment_gradient_sparse_dream](12_20_2020_experiment_gradient_sparse_dream)
+11. [12_20_2020_experiment_mwta_sparse_dream](12_20_2020_experiment_mwta_sparse_dream)
+12. [12_20_2020_experiment_time_series_mwta](12_20_2020_experiment_time_series_mwta)

@@ -1,0 +1,5 @@
+# Gradient SparseDream
+
+Basically another attempt at deterministic sparse coding, but this time I'm using gradient descent because if you can't beat em', join em', am I right?  This actually isn't really using full backprop, but it's just using straight-up gradients instead of my qualitatively chosen adjustment rules.  With this setup, I have two layers.  One is the feedforward layer, and the other layer is playing the part of lateral inhibition, I suppose.  Actually, it's not constrained to be inhibitory, so we'll have to see what it does.  
+
+The objective function being minimized for this network contains three terms.  The first is the reconstruction error term, the second is the term that penalizes multiple outputs being on at the same time (which should hopefully enforce sparsity), and the third term keeps the feedfoward weight prototypes on the unit n-sphere.
