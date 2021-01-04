@@ -1,0 +1,3 @@
+# Invariant Layer
+
+It's finally here!  After literally forever saying I'm going to do the invariant layer ... I'm writing the invariant layer!  Soooooo, basically, if sparse coding finds structure in the incoming data, the invariant layer finds the the relationships between the sparse structures.  What I'm looking for is for the invariant layer to change smoothly throughout time, whereas the invariant layer is effectively pure chaos.  
