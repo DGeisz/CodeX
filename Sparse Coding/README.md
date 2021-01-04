@@ -27,6 +27,7 @@ to get there.
 14. [1_1_2021_experiment_accelerated_mwta](1_1_2021_experiment_accelerated_mwta)
 15. [1_2_2021_experiment_mwta_noise](1_2_2021_experiment_mwta_noise)
 16. [1_2_2021_experiment_aws_mwta](1_2_2021_experiment_aws_mwta)
+17. [1_4_2021_experiment_time_series_aws](1_4_2021_experiment_time_series_aws)
 
 ### Notes:
 I think I messed up the dates on experiments 11 and 12.  12 should be on 12/29.  Not that it matters much.
