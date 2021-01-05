@@ -15,6 +15,8 @@ directory.  The naming convention for these directories is as follows.  Each EMT
 name starts with a date, then a type, and finally a brief title of the EMT, all 
 lowercase and separated by underscores.
 
+If the type of the directory isn't specified, you can assume it is an experiment.
+
 Thus, 11_9_2020_metric_mnist_competitive_classification refers to a metric I created on 
 11/9/2020 that has something to do with competitive classification on the MNIST dataset.
 
@@ -100,3 +102,4 @@ was using in past CodeX eras.
 
 * Edit 11/24/2020 - Added specification for when I run experiment code directly in the notebook. Commit: 6f189d0d20685 
 * Edit 11/20/2020 - Added **Technicals** section to experiment write-ups. Commit: ec252a41962a00a
+* Edit 1/4/2021 - Made \_experiment\_ part of directory name optional
