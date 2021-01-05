@@ -1,0 +1,3 @@
+# Sparse Invariance
+
+In an absolutely wild turn of events, I think it only makes sense to add sparsity to the invariant layer.  It's actually crazy that I didn't think about this earlier.  You think I would've learned that if you treat all neurons the same way, there's probably going to be some level of homogeneity...well, actually, with the collaborative network, the neurons did learn different prototypes.  I guess I assumed the same thing would happen with the invariant layer.  Well, I guess that's what assuming gets you.  Anyway, I'm adding sparsity to the invariant layer, and I think it might be pretty saucy.
