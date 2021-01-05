@@ -1,0 +1,3 @@
+# Smooth Sparse Invariance
+
+AFter the last two experiments, I realized the manner in which I was training the invariant layer to be smooth was deeply flawed.  In this experiment, I'm going to try out an algorithm that explicitly alters its weights so that the sparse output matches the linear interpolation.  This level of sparsity might actually be kinda bad for training just because it isn't really seeing a ton of data, but hopefully it works.  We'll see.
