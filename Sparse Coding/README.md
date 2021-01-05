@@ -31,6 +31,7 @@ to get there.
 18. [1_4_2021_experiment_invariant_layer](1_4_2021_experiment_invariant_layer)
 19. [1_4_2021_experiment_sparse_invariance](1_4_2021_experiment_sparse_invariance)
 20. [1_5_2021_smooth_sparse_invariance](1_5_2021_smooth_sparse_invariance)
+21. [1_5_2021_smooth_collab_invariance](1_5_2021_smooth_collab_invariance)
 
 ### Notes:
 I think I messed up the dates on experiments 11 and 12.  12 should be on 12/29.  Not that it matters much.
