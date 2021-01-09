@@ -35,6 +35,7 @@ to get there.
 22. [1_5_2021_ribbon_invariance](1_5_2021_ribbon_invariance)
 23. [1_6_2021_variable_xi_invariance](1_6_2021_variable_xi_invariance)
 24. [1_7_2021_gray_cifar_mwta](1_7_2021_gray_cifar_mwta)
+25. [1_9_2021_gray_ciar_mwta_10x10](1_9_2021_gray_ciar_mwta_10x10)
 
 ### Notes:
 I think I messed up the dates on experiments 11 and 12.  12 should be on 12/29.  Not that it matters much.
