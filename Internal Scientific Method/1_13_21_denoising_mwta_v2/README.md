@@ -1,0 +1,3 @@
+# Denoising MWTA v2
+
+I'm basically running the de-noising experiment again from the sparse coding project, because I think I can do it better.  I think I may have been using a limited number of neurons, and I'm not even sure I had started using the p-instance yet.  Anyway, I'm going to train it with a fewer number of winners so the neurons are forced to find more complete structures in the data than they did previously.  I'm also going to use constant initialization to promote smoothness and general awesomeness.
