@@ -17,3 +17,4 @@ lower order neural components.  So, you best believe I'm going to find out.
 ## Table of Contents:
 
 1. [1_13_21_denoising_mwta_v2](1_13_21_denoising_mwta_v2)
+2. [1_13_21_averaging_hypothesis_imposition](1_13_21_averaging_hypothesis_imposition)

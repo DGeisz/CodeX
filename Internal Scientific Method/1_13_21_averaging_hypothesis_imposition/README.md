@@ -1,0 +1,3 @@
+# Averaging Hypothesis Imposition
+
+It would make sense that the brain would attempt to enforce higher level hypotheses on lower level neurons in order to alleviate much of the processing required by the brain.  The question, then, is how to do this in my networks.  I have a couple poorly formulated ideas, but I think probably the best way to start is the using the easiest possible method.  In this case, I think the easiest possible method of hypothesis imposition is simply averaging the input and the reconstruction.  So that's what I'm going to do.  
