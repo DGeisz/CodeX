@@ -12,3 +12,4 @@ prototypes discovered by neurons.
 ## Table of Contents:
 
 1. [1_13_2021_topo_time_series_mwta](1_13_2021_topo_time_series_mwta)
+2. [1_13_2021_topo_mwta_cifar](1_13_2021_topo_mwta_cifar)
