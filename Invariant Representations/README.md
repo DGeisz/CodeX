@@ -16,3 +16,4 @@ prototypes discovered by neurons.
 3. [1_14_2021_var_xi_topo_mwta](1_14_2021_var_xi_topo_mwta)
 4. [1_14_2021_topo_everywhere](1_14_2021_topo_everywhere)
 5. [1_14_2021_invariant_mnist_classifier](1_14_2021_invariant_mnist_classifier)
+6. [1_17_2021_topo_mwta_cifar_color](1_17_2021_topo_mwta_cifar_color)
