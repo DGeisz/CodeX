@@ -36,6 +36,7 @@ to get there.
 23. [1_6_2021_variable_xi_invariance](1_6_2021_variable_xi_invariance)
 24. [1_7_2021_gray_cifar_mwta](1_7_2021_gray_cifar_mwta)
 25. [1_9_2021_gray_ciar_mwta_10x10](1_9_2021_gray_ciar_mwta_10x10)
+26. [1_17_2091_threshold_sparse_coding](1_17_2091_threshold_sparse_coding)
 
 ### Notes:
 I think I messed up the dates on experiments 11 and 12.  12 should be on 12/29.  Not that it matters much.

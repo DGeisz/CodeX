@@ -1,0 +1,3 @@
+# Threshold Sparse Coding
+
+So we all know and love MWTA.  That being said, the whole "fixed sparsity" game is troubling.  By that I mean it's troubling that there are always only a certain number of winners.  With threshold sparse coding, any neuron above a certain threshold fraction of the max neuron output "wins" and keeps its value.  Thus the number of winners isn't fixed, allowing for different degrees of sparsity.  Which, I believe, is a very good thing.  Especially for higher order neurons.
