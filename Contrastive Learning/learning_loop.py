@@ -2,6 +2,8 @@ import json
 import sys
 import time
 import math
+import shutil
+import os
 
 from augs import Transform
 from optimizer import LARS
@@ -12,7 +14,6 @@ import torch
 import torchvision
 
 WEIGHT_DECAY = 1E-6
-CHECKPOINT_DIR = Path('./checkpoint_good_sqrt/')
 EPOCHS = 1000
 BATCH_SIZE = 256
 LEARNING_RATE_WEIGHTS = 0.2
@@ -37,10 +38,16 @@ def adjust_learning_rate(optimizer, loader, step):
     optimizer.param_groups[1]['lr'] = lr * LEARNING_RATE_BIASES
 
 
-def learning_loop(model, dataset, loop_callback):
-    CHECKPOINT_DIR.mkdir(parents=True, exist_ok=True)
-    stats_file = open(CHECKPOINT_DIR / 'stats.txt', 'a', buffering=1)
-    eigen_file = open(CHECKPOINT_DIR / 'eigen.txt', 'a', buffering=1)
+def learning_loop(model, dataset, output_dir, delete_existing_dir=False):
+    checkpoint_path = f"./checkpoint_{output_dir}/"
+    checkpoint_dir = Path(checkpoint_path)
+
+    if delete_existing_dir and os.path.isdir(checkpoint_path):
+        shutil.rmtree(checkpoint_path)
+
+    checkpoint_dir.mkdir(parents=True, exist_ok=True)
+    stats_file = open(checkpoint_dir / 'stats.txt', 'a', buffering=1)
+    eigen_file = open(checkpoint_dir / 'eigen.txt', 'a', buffering=1)
 
     print(' '.join(sys.argv))
     print(' '.join(sys.argv), file=stats_file)
@@ -63,8 +70,8 @@ def learning_loop(model, dataset, loop_callback):
                      lars_adaptation_filter=True)
 
     # automatically resume from checkpoint if it exists
-    if (CHECKPOINT_DIR / 'checkpoint.pth').is_file():
-        ckpt = torch.load(CHECKPOINT_DIR / 'checkpoint.pth',
+    if (checkpoint_dir / 'checkpoint.pth').is_file():
+        ckpt = torch.load(checkpoint_dir / 'checkpoint.pth',
                           map_location='cpu')
         start_epoch = ckpt['epoch']
         model.load_state_dict(ckpt['model'])
@@ -112,12 +119,10 @@ def learning_loop(model, dataset, loop_callback):
                 print(json.dumps(eigen), file=eigen_file)
                 print(json.dumps(stats), file=stats_file)
 
-                if loop_callback:
-                    loop_callback(eigen)
         # save checkpoint
         state = dict(epoch=epoch + 1, model=model.state_dict(),
                      optimizer=optimizer.state_dict())
-        torch.save(state, CHECKPOINT_DIR / 'checkpoint.pth')
+        torch.save(state, checkpoint_dir / 'checkpoint.pth')
     # save final model
     torch.save(model.module.backbone.state_dict(),
-               CHECKPOINT_DIR / 'resnet50.pth')
+               checkpoint_dir / 'resnet50.pth')

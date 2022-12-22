@@ -4,5 +4,6 @@ data
 data/*
 Data
 Data/*
+__pycache__
 .ipynb_checkpoints
 *.pth
