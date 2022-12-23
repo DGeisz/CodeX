@@ -26,7 +26,7 @@ class Solarization(object):
             return img
 
 
-class Transform:
+class AugTransform:
     def __init__(self):
         self.transform = transforms.Compose([
             transforms.RandomResizedCrop(224, interpolation=Image.BICUBIC),
