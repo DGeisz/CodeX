@@ -14,7 +14,7 @@ import torchvision
 
 WEIGHT_DECAY = 1E-6
 EPOCHS = 1000
-BATCH_SIZE = 256
+BATCH_SIZE = 64
 LEARNING_RATE_WEIGHTS = 0.2
 LEARNING_RATE_BIASES = 0.0048
 WORLD_SIZE = 1
@@ -196,7 +196,7 @@ def aug_learning_loop(model, dataset, output_dir, delete_existing_dir=False):
                              time=int(time.time() - start_time))
                 start = time.time()
                 print('Starting Eigen Comp')
-                eigen = dict(eigenvalues=model.cov_eig(y1))
+                eigen = dict(eigenvalues=model.cov_eig(y1, y2))
                 end = time.time()
                 print('Ending Eigen Comp', end - start, "sec")
 

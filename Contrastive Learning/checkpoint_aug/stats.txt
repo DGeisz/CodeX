@@ -1,1 +1,5 @@
-/opt/conda/envs/pytorch/lib/python3.9/site-packages/ipykernel_launcher.py -f /home/ubuntu/.local/share/jupyter/runtime/kernel-c279bef5-f40c-42e3-9976-0ee6d9a1fc8b.json
+/opt/conda/envs/pytorch/lib/python3.9/site-packages/ipykernel_launcher.py -f /home/ubuntu/.local/share/jupyter/runtime/kernel-f72b1d92-0b36-49c0-ab29-9909576ec741.json
+{"epoch": 0, "step": 0, "lr_weights": 0.0, "lr_biases": 0.0, "loss": 501.809814453125, "time": 3}
+{"epoch": 0, "step": 25, "lr_weights": 0.0015822784810126584, "lr_biases": 3.79746835443038e-05, "loss": 501.809814453125, "time": 37}
+{"epoch": 0, "step": 50, "lr_weights": 0.003164556962025317, "lr_biases": 7.59493670886076e-05, "loss": 501.809814453125, "time": 70}
+{"epoch": 0, "step": 75, "lr_weights": 0.004746835443037976, "lr_biases": 0.00011392405063291139, "loss": 501.80975341796875, "time": 103}
