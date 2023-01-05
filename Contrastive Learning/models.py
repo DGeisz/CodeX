@@ -25,7 +25,7 @@ class BarlowTwins(nn.Module):
         self.batch_size = batch_size
         self.use_sqrt = use_sqrt
 
-        self.name = 'good_sqrt'
+        self.name = 'sqrt_no_norm'
 
         # So this is where the res net is.  Cool.
         self.backbone = torchvision.models.resnet50(zero_init_residual=True)
@@ -44,7 +44,8 @@ class BarlowTwins(nn.Module):
         # normalization layer for the representations z1 and z2
         self.bn = nn.BatchNorm1d(sizes[-1], affine=False)
 
-        self.scale_model(0.03)
+        # self.scale_model(0.03)
+        self.scale_model(.08)
 
     def scale_model(self, alpha):
         state_dict = self.state_dict()
@@ -61,7 +62,8 @@ class BarlowTwins(nn.Module):
             param.copy_(transformed_param)
             
     def forward_reps(self, y1):
-        return self.bn(self.projector(self.backbone(y1)))
+        return self.projector(self.backbone(y1))
+        # return self.bn(self.projector(self.backbone(y1)))
     
     def cov_eig(self, y1):
         reps = self.forward_reps(y1)

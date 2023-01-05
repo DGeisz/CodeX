@@ -37,7 +37,9 @@ def adjust_learning_rate(optimizer, loader, step):
     optimizer.param_groups[1]['lr'] = lr * LEARNING_RATE_BIASES
 
 
-def learning_loop(model, dataset, output_dir, delete_existing_dir=False):
+def learning_loop(model, dataset, probe_data, output_dir, delete_existing_dir=False):
+    probe_data = probe_data.cuda()
+
     checkpoint_path = f"./checkpoint_{output_dir}/"
     checkpoint_dir = Path(checkpoint_path)
 
@@ -106,7 +108,7 @@ def learning_loop(model, dataset, output_dir, delete_existing_dir=False):
                              time=int(time.time() - start_time))
                 start = time.time()
                 print('Starting Eigen Comp')
-                eigen = dict(eigenvalues=model.cov_eig(y1))
+                eigen = dict(eigenvalues=model.cov_eig(probe_data))
                 end = time.time()
                 print('Ending Eigen Comp', end - start, "sec")
 
