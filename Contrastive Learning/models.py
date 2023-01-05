@@ -112,7 +112,7 @@ class BauglowTwins(nn.Module):
         self.batch_size = batch_size
         self.use_sqrt = use_sqrt
 
-        self.name = 'augs_no_sqrt'
+        self.name = 'augs_no_sqrt_single_probe'
 
         # So this is where the res net is.  Cool.
         self.backbone = torchvision.models.resnet50(zero_init_residual=True)
