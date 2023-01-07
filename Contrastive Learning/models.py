@@ -18,14 +18,16 @@ def matrix_sqrt(M):
   return vecs @ torch.diag(new_vals ** .5) @ vecs.T
 
 class BarlowTwins(nn.Module):
-    def __init__(self, batch_size, use_sqrt):
+    def __init__(self, batch_size, use_sqrt, use_norm):
         super().__init__()
         # self.lam = 0.0051
         self.lam = 1
         self.batch_size = batch_size
         self.use_sqrt = use_sqrt
+        self.use_norm = use_norm
 
-        self.name = 'sqrt_no_norm'
+        self.name = f'{"sqrt" if use_sqrt else "no_sqrt"}_{"norm" if use_norm else "no_norm"}'
+
 
         # So this is where the res net is.  Cool.
         self.backbone = torchvision.models.resnet50(zero_init_residual=True)
@@ -45,7 +47,7 @@ class BarlowTwins(nn.Module):
         self.bn = nn.BatchNorm1d(sizes[-1], affine=False)
 
         # self.scale_model(0.03)
-        self.scale_model(.08)
+        # self.scale_model(.08)
 
     def scale_model(self, alpha):
         state_dict = self.state_dict()
@@ -62,8 +64,10 @@ class BarlowTwins(nn.Module):
             param.copy_(transformed_param)
             
     def forward_reps(self, y1):
-        return self.projector(self.backbone(y1))
-        # return self.bn(self.projector(self.backbone(y1)))
+        if self.use_norm:
+            return self.bn(self.projector(self.backbone(y1)))
+        else:
+            return self.projector(self.backbone(y1))
     
     def cov_eig(self, y1):
         reps = self.forward_reps(y1)
@@ -86,6 +90,17 @@ class BarlowTwins(nn.Module):
         c = matrix_sqrt(c) 
 
         return cov, c
+    
+    def cov(self, y1):
+        reps = self.forward_reps(y1)
+
+        # empirical cross-correlation matrix
+        c = reps.T @ reps
+
+        # sum the cross-correlation matrix between all gpus
+        c.div_(self.batch_size)
+
+        return c
 
         
     def forward(self, y1):

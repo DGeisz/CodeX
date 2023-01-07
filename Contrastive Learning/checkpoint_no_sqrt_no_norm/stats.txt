@@ -1106,3 +1106,7 @@
 {"epoch": 349, "step": 27600, "lr_weights": 0.03686416054018691, "lr_biases": 0.0008847398529644857, "loss": 499.0544128417969, "time": 2796}
 {"epoch": 349, "step": 27625, "lr_weights": 0.036842071274790854, "lr_biases": 0.0008842097105949803, "loss": 499.0448913574219, "time": 2798}
 {"epoch": 350, "step": 27650, "lr_weights": 0.03681997009244775, "lr_biases": 0.0008836792822187459, "loss": 499.0466003417969, "time": 2801}
+/opt/conda/envs/pytorch/lib/python3.9/site-packages/ipykernel_launcher.py -f /home/ubuntu/.local/share/jupyter/runtime/kernel-cf6a18a0-9ec4-4b2c-a513-69b885f72f70.json
+/opt/conda/envs/pytorch/lib/python3.9/site-packages/ipykernel_launcher.py -f /home/ubuntu/.local/share/jupyter/runtime/kernel-cf6a18a0-9ec4-4b2c-a513-69b885f72f70.json
+{"epoch": 350, "step": 27650, "lr_weights": 0.03681997009244775, "lr_biases": 0.0008836792822187459, "loss": 499.0466003417969, "time": 1}
+{"epoch": 350, "step": 27675, "lr_weights": 0.03679785701544559, "lr_biases": 0.0008831485683706941, "loss": 499.0159606933594, "time": 4}
