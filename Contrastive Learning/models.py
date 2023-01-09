@@ -122,14 +122,15 @@ class BarlowTwins(nn.Module):
         return loss
 
 class BauglowTwins(nn.Module):
-    def __init__(self, batch_size, use_sqrt):
+    def __init__(self, batch_size, use_sqrt, use_norm):
         super().__init__()
         # self.lam = 0.0051
         self.lam = 1
         self.batch_size = batch_size
         self.use_sqrt = use_sqrt
+        self.use_norm = use_norm
 
-        self.name = 'augs_no_sqrt_single_probe'
+        self.name = f'augs_{"sqrt" if use_sqrt else "no_sqrt"}_{"norm" if use_norm else "no_norm"}'
 
         # So this is where the res net is.  Cool.
         self.backbone = torchvision.models.resnet50(zero_init_residual=True)
@@ -149,7 +150,10 @@ class BauglowTwins(nn.Module):
         self.bn = nn.BatchNorm1d(sizes[-1], affine=False)
 
         # self.scale_model(0.03)
-        self.scale_model(0.045) # For no Augs, no sqrt
+        if use_norm:
+            self.scale_model(0.045) # For augs, no sqrt
+        else:
+            self.scale_model(0.09) # For augs with no norm
 
     def scale_model(self, alpha):
         state_dict = self.state_dict()
@@ -169,8 +173,11 @@ class BauglowTwins(nn.Module):
         self.scale_model(1 / alpha)
             
     def forward_reps(self, y1):
-        return self.bn(self.projector(self.backbone(y1)))
-    
+        if self.use_norm:
+            return self.bn(self.projector(self.backbone(y1)))
+        else:
+            return self.projector(self.backbone(y1))
+
     def cov_eig(self, y1, y2):
         z1 = self.forward_reps(y1)
         z2 = self.forward_reps(y2)
